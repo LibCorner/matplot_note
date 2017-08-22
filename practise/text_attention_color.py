@@ -2,6 +2,14 @@
 import matplotlib.pyplot as plt
 from matplotlib import cm
 from matplotlib import transforms
+import matplotlib
+
+matplotlib.use('qt4agg')  
+#指定默认字体  
+matplotlib.rcParams['font.sans-serif'] = ['SimHei']   
+matplotlib.rcParams['font.family']='sans-serif'  
+#解决负号'-'显示为方块的问题  
+matplotlib.rcParams['axes.unicode_minus'] = False  
 
 def show_text_attention(text,weights,cmap=cm.Reds):
     '''文本中不同单词显示不同背景颜色
