@@ -54,6 +54,6 @@ for w,s in zip(sent,score):
     text.draw(fig.canvas.get_renderer())
     ex = text.get_window_extent()
     t = transforms.offset_copy(text._transform,x=0.1+ex.width, units='dots')
-t = plt.gca().transData
-fig = plt.gcf()
+#t = plt.gca().transData
+#fig = plt.gcf()
 fig.show()

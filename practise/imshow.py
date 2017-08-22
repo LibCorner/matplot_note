@@ -1,6 +1,6 @@
 #coding:utf-8
 import numpy as np
-import matplotlib.pyplot as plt
+aimport matplotlib.pyplot as plt
 
 fig,ax=plt.subplots()
 min_val,max_val,diff=0.,10.,1.
